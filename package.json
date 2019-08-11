@@ -1,0 +1,28 @@
+{
+  "name": "mp-store",
+  "version": "1.0.0",
+  "description": "state management for mini program",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd ./test && npx webpack ./simple.js --mode=development && clear && node ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiNISAL/mp-store.git"
+  },
+  "keywords": [
+    "store",
+    "state-management",
+    "mp",
+    "weixin",
+    "wechat",
+    "小程序",
+    "微信小程序"
+  ],
+  "author": "NISAL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiNISAL/mp-store/issues"
+  },
+  "homepage": "https://github.com/hiNISAL/mp-store#readme"
+}
