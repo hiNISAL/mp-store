@@ -1,5 +1,5 @@
 {
-  "name": "mp-store",
+  "name": "mp-store-mgr",
   "version": "1.0.0",
   "description": "state management for mini program",
   "main": "index.js",

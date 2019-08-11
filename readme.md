@@ -65,14 +65,15 @@ Page({
 使用他们代替Page和Component来申明页面和组件，可以优化对数据的访问体验。
 
 ``` js
-import CoverPage from './cover/Page.js';
+import CoverPage from './cover/Page';
+import store from './store';
 
 CoverPage({
   store: ['foo', 'bar'],
   onLoad() {
     console.log(this.store.foo);
   },
-});
+}, store);
 
 CoverPage({
   store: {
@@ -84,7 +85,7 @@ CoverPage({
   onLoad() {
     console.log(this.store['ns_foo']);
   },
-});
+}, store);
 ```
 
 组件中使用方式相同
