@@ -11,12 +11,12 @@ export const inject = (store, config, instance) => {
         state = {
           key: state,
         };
-
-        state.instance = instance;
-        state.nameSpace = k;
-
-        store.register(state);
       }
+
+      state.instance = instance;
+      state.nameSpace = k;
+
+      store.register(state);
     });
   }
 };
