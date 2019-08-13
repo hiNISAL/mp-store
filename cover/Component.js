@@ -13,14 +13,14 @@ export default (options, storeInstance) => {
       async attached(...args) {
         inject(storeInstance, store, this);
 
-        await attached.apply(this, ...args);
+        await attached.apply(this, args);
 
-        rootAttached.apply(this);
+        rootAttached.call(this);
       },
       async detached(...args) {
-        await detached.apply(this, ...args);
+        await detached.apply(this, args);
 
-        await rootDetached.apply(this);
+        await rootDetached.call(this);
 
         storeInstance.logout(this);
       }

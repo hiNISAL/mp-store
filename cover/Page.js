@@ -11,10 +11,10 @@ export default (options, storeInstance) => {
     async onLoad(options) {
       inject(storeInstance, store, this);
 
-      return await onLoad.apply(this, options);
+      return await onLoad.call(this, options);
     },
     async onUnload(...args) {
-      const res = await onUnload(...args);
+      const res = await onUnload.apply(this, args);
 
       storeInstance.logout(this);
 
